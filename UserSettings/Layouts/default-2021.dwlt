@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1397
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 31
+  controlID: 33
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,21 +317,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/EffectExamples
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/EffectExamples
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\House-of-the-Dead
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0cc50000
-    m_LastClickedID: 50444
+    m_SelectedIDs: 32c50000
+    m_LastClickedID: 50482
     m_ExpandedIDs: 0000000036c4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bac60000
+      m_SelectedIDs: 5cc50000
       m_LastClickedID: 0
-      m_ExpandedIDs: 0cfbffff225c00003a5c0000445c0000
+      m_ExpandedIDs: 0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.014023272, y: -0.98527163, z: 0.09935911, w: -0.13863613}
+    m_Target: {x: -0.026424928, y: -0.94772214, z: 0.08121801, w: -0.3075455}
     speed: 2
-    m_Value: {x: -0.014171947, y: -0.9850384, z: 0.09933553, w: -0.14011043}
+    m_Value: {x: -0.026424188, y: -0.9476956, z: 0.08121574, w: -0.3075369}
   m_Size:
-    m_Target: 0.34547728
+    m_Target: 0.25785837
     speed: 2
-    m_Value: 0.3448023
+    m_Value: 0.25785837
   m_Ortho:
     m_Target: 0
     speed: 2
