@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class PleaseFuckingDie : MonoBehaviour
 {
-    public int health = 100;
+    [SerializeField] float health, maxHealth =3f;
 
-    public void TakeDamage(int damage)
+    
 
+    private void Start()
     {
-        health -= damage;
-        if(health <= 0)
+        health = maxHealth;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+
+        if(health <=0 )
         {
             Destroy(gameObject);
         }
     }
-    
+
+
 }
