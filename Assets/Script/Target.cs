@@ -15,6 +15,8 @@ public class Target : MonoBehaviour
     public TextMeshPro winText;
     public TextMeshPro loseText;
 
+    public GameObject player;
+
     // Update is called once per frame
     void Update()
     {
@@ -28,8 +30,7 @@ public class Target : MonoBehaviour
         if(enemyKillCount >= 15)
         {
             levelClear = true;
-            // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
-            SceneManager.LoadScene("Game 1");
+            player.transform.position = new Vector3(-176.589996f, 3.31999993f, -141.639999f);
         }
 
         if(enemyKillCount >= 30)
