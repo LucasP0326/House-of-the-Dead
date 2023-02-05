@@ -27,7 +27,7 @@ public class EnemySpawning : MonoBehaviour
         if (canSpawn)
         {
             spawnTime -= Time.deltaTime;
-            if (spawnTime < 0)
+            if (spawnTime < 5)
             {
                 spawnTime = 1;
             }
