@@ -28,11 +28,14 @@ public class Target : MonoBehaviour
         if(enemyKillCount >= 15)
         {
             levelClear = true;
+            // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
+            SceneManager.LoadScene("Game 1");
         }
 
         if(enemyKillCount >= 30)
         {
             winState = true;
+
         }
     }
 
@@ -40,5 +43,13 @@ public class Target : MonoBehaviour
     public void Hit(float damage)
     {
         health -= damage;
+        Debug.Log(health);
+
+        if (health <= 0f)
+            Destroy(gameObject;
+        {
+            Debug.Log("STOP");
+
+        }
     }
 }
