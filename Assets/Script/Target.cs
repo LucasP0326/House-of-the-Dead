@@ -7,7 +7,7 @@ using TMPro;
 public class Target : MonoBehaviour
 {
     public float health;
-    private float enemyKillCount;
+    public static int enemyKillCount;
 
     bool winState;
     bool loseState;
@@ -36,6 +36,15 @@ public class Target : MonoBehaviour
         {
             winState = true;
 
+            // Restart the game
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (loseState == true)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+                }
+            }
+
         }
     }
 
@@ -46,7 +55,7 @@ public class Target : MonoBehaviour
         Debug.Log(health);
 
         if (health <= 0f)
-            Destroy(gameObject;
+        
         {
             Debug.Log("STOP");
 
