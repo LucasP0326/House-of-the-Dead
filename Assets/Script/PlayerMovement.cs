@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public int kills = 0;
 
     Vector3 velocity;
     bool isGrounded;
@@ -34,13 +35,44 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        /*if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jump * -2f * gravity);
-        }
+        }*/
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if(kills == 5)
+        {
+            transform.position = new Vector3(-185,2.5f,80);
+        }
+
+        if(kills == 10)
+        {
+            transform.position = new Vector3(-185,2.5f,10);
+        }
+
+        if(kills == 15)
+        {
+            transform.position = new Vector3(-150,20,-50);
+        }
+
+        if(kills == 20)
+        {
+            transform.position = new Vector3(-195,20,-90);
+        }
+
+        if(kills == 25)
+        {
+            transform.position = new Vector3(-155,20,-155);
+        }
+    }
+
+    public void updateKill()
+    {
+        kills++;
+        Debug.Log(kills);
     }
 }

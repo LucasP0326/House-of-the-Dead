@@ -7,13 +7,15 @@ using TMPro;
 public class Target : MonoBehaviour
 {
     public float health;
-    private float enemyKillCount;
+    public static int enemyKillCount;
 
     bool winState;
     bool loseState;
     bool levelClear;
     public TextMeshPro winText;
     public TextMeshPro loseText;
+    public GameObject player;
+    public GameObject spawner;
 
     // Update is called once per frame
     void Update()
@@ -22,17 +24,30 @@ public class Target : MonoBehaviour
         {
             Destroy(gameObject);
             enemyKillCount ++;
+            PlayerMovement playerMovement = player.gameObject.GetComponent<PlayerMovement>();
+            playerMovement.updateKill();
             Debug.Log("Enemy killed");
         }
 
-        if(enemyKillCount >= 15)
+        if(enemyKillCount == 5)
         {
             levelClear = true;
+            // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
         }
 
         if(enemyKillCount >= 30)
         {
             winState = true;
+
+            // Restart the game
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (loseState == true)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+                }
+            }
+
         }
     }
 
@@ -40,5 +55,13 @@ public class Target : MonoBehaviour
     public void Hit(float damage)
     {
         health -= damage;
+        Debug.Log(health);
+
+        if (health <= 0f)
+        
+        {
+            Debug.Log("STOP");
+
+        }
     }
 }
