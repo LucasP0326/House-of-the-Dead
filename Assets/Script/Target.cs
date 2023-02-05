@@ -7,7 +7,7 @@ using TMPro;
 public class Target : MonoBehaviour
 {
     public float health;
-    private float enemyKillCount;
+    public static int enemyKillCount;
 
     bool winState;
     bool loseState;
@@ -22,7 +22,7 @@ public class Target : MonoBehaviour
         {
             Destroy(gameObject);
             enemyKillCount ++;
-            Debug.Log("Enemy killed");
+            Debug.Log("Enemy killed" + enemyKillCount);
         }
 
         if(enemyKillCount >= 15)
