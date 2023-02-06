@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -2703,7 +2703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -3953,7 +3953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -4158,7 +4158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -5158,7 +5158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -5811,7 +5811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -6055,7 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -7047,7 +7047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -7187,7 +7187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -7377,7 +7377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -7597,7 +7597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -7719,7 +7719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -8068,7 +8068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
@@ -8324,7 +8324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436833e3e32e69543a404acac0b0b3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
   winText: {fileID: 0}
   loseText: {fileID: 0}
   player: {fileID: 1006940829}
