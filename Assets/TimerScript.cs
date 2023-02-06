@@ -73,7 +73,7 @@ public class TimerScript : MonoBehaviour
             StopSound(tickingSound);
 
             // Gets RubyController and activates LoseState Method
-            Target.LoseState();
+            Player.loseState = true;
         }
     }
 

@@ -9,8 +9,10 @@ public class Target : MonoBehaviour
     public float health;
     public static int enemyKillCount;
 
-    bool winState;
-    bool loseState;
+    TimerScript timer;
+
+   public bool winState;
+   public bool loseState;
     bool levelClear;
     public TextMeshPro winText;
     public TextMeshPro loseText;
@@ -42,12 +44,11 @@ public class Target : MonoBehaviour
             // Restart the game
             if (Input.GetKeyDown(KeyCode.P))
             {
-                if (loseState == true)
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
-                }
+                
+                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // this loads the currently active scene
+                
             }
-
+    
         }
     }
 
