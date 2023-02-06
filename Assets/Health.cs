@@ -8,7 +8,11 @@ public class Health : MonoBehaviour
 {
     public GameObject LoseText;
 
+    public float maxHealth = 500f;
     static float health = 500f;
+
+    public HealthBar healthBar;
+
     public GameObject player;
     public GameObject enemy1;
     public GameObject enemy2;
@@ -45,6 +49,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
+        healthBar.setHealth(health);
 
         Debug.Log(health);
 
@@ -56,9 +61,10 @@ public class Health : MonoBehaviour
         }
     }
     
-        void Start()
+    void Start()
     {
         LoseText.SetActive(false);
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
