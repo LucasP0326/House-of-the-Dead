@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
 
         public AudioSource ReloadSFX;
         public AudioSource ShootSFX;
+        public GameObject ReloadSign;
 
     // How far forward the muzzle is from the centre of the gun
     private float muzzleOffset;
@@ -45,6 +46,7 @@ public class Gun : MonoBehaviour
     void Start() {
         muzzleOffset = GetComponent<Renderer>().bounds.extents.z;
         remainingAmmunition = ammunition;
+        ReloadSign.SetActive(false);
     }
 
     void Update() {
@@ -93,7 +95,9 @@ public class Gun : MonoBehaviour
             if(remainingAmmunition > 0) {
                 nextShootTime = Time.time + (1 / fireRate);
                 shootState = ShootState.Shooting;
+                ReloadSign.SetActive(false);
             } else {
+                ReloadSign.SetActive(true);
                 Reload();
             }
         }
