@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 public class Health : MonoBehaviour
 {
+    public GameObject LoseText;
+
     static float health = 500f;
     public GameObject player;
     public GameObject enemy1;
@@ -38,6 +41,7 @@ public class Health : MonoBehaviour
     public GameObject enemy29;
     public GameObject enemy30;
 
+
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -48,7 +52,13 @@ public class Health : MonoBehaviour
         {
             Debug.Log("STOP");
             Time.timeScale = 0;
+            LoseText.SetActive(true);
         }
+    }
+    
+        void Start()
+    {
+        LoseText.SetActive(false);
     }
 
     void Update()

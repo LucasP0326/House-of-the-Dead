@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,9 +15,15 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     public int kills = 0;
+    public GameObject WinText;
 
     Vector3 velocity;
     bool isGrounded;
+
+    void Start()
+    {
+        WinText.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -68,7 +75,13 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(-155,20,-155);
         }
+        if(kills == 30)
+        {
+            Time.timeScale = 0;
+            WinText.SetActive(true);
+        }
     }
+        
 
     public void updateKill()
     {
